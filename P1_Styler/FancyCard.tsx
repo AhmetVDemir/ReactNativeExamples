@@ -29,24 +29,60 @@ export default function FancyCard() {
 
 const stl = StyleSheet.create({
     headingText:{
-
+      fontSize:24,
+      fontWeight:'bold',
+      paddingHorizontal:8,
     },
     card:{
-
+      width:350,
+      height:360,
+      borderRadius:6,
+      marginVertical:12,
+      marginHorizontal:16,
     },
     cardElevated:{
+      backgroundColor:'#FFFFFF',
+      color:'#000000',
+      elevation:3,
+      shadowOffset:{
+        width:1,
+        height:1
+      }
 
     },
-    cardBody:{},
-    cardTitle:{},
-    cardLabel:{},
-    cardFooter:{
+    cardBody:{
+      flex:1,
+      flexGrow:1,
+      paddingHorizontal:12,
 
+    },
+    cardTitle:{
+      color:'#000000',
+      fontSize:22,
+      fontWeight:'bold',
+      marginBottom:6,
+
+    },
+    cardLabel:{
+      color:'#000000',
+      fontSize:14,
+      marginBottom:6,
+    },
+    cardFooter:{
+      color:'#000000'
     },
     cardDescription:{
-
+      color:'#242B2E',
+      fontSize:12,
+      marginBottom:12,
+      marginTop:8,
+      flexShrink:1
     },
     cardImage:{
-        height:180
+        height:180,
+        marginBottom:8,
+        borderTopLeftRadius:6,
+        borderTopRightRadius:6
+
     }
 })
